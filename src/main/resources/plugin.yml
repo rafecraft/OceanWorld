@@ -1,0 +1,35 @@
+name: OceanWorld
+version: '1.0-SNAPSHOT'
+main: me.rafe.oceanWorld.OceanWorld
+api-version: '1.21'
+authors: [ Rafe ]
+description: Generates infinite custom ocean worlds with configurable biomes and features
+
+commands:
+  oceanworldcreate:
+    description: Create a new ocean world
+    usage: /<command> <world-name>
+    permission: oceanworld.create
+    permission-message: You don't have permission to create ocean worlds!
+  oceantp:
+    description: Teleport to any world
+    usage: /<command> <world-name>
+    permission: oceanworld.teleport
+    permission-message: You don't have permission to teleport to worlds!
+  oceanworldreload:
+    description: Reload the OceanWorld plugin configuration
+    usage: /<command>
+    permission: oceanworld.reload
+    permission-message: You don't have permission to reload the plugin!
+    aliases: [owreload, oceanreload]
+
+permissions:
+  oceanworld.create:
+    description: Allows creating ocean worlds
+    default: op
+  oceanworld.teleport:
+    description: Allows teleporting to any world
+    default: op
+  oceanworld.reload:
+    description: Allows reloading the plugin configuration
+    default: op

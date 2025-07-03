@@ -1,0 +1,6 @@
+me\rafe\oceanWorld\commands\CreateOceanWorldCommand.class
+me\rafe\oceanWorld\generator\OceanBiomeProvider.class
+me\rafe\oceanWorld\generator\OceanChunkGenerator.class
+me\rafe\oceanWorld\config\ConfigManager.class
+me\rafe\oceanWorld\OceanWorld.class
+me\rafe\oceanWorld\commands\OceanTeleportCommand.class

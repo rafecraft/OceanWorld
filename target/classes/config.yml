@@ -1,0 +1,87 @@
+# OceanWorldGenerator Configuration File
+# This file allows you to customize the ocean world generation
+
+# Plugin prefix configuration
+prefix:
+  # Enable or disable the prefix
+  enabled: true
+  # Prefix text (supports color codes with &)
+  text: "&8[&b&lOCEAN&3&lWORLD&8] &r"
+  # Alternative prefix options (uncomment one to use):
+  # text: "&8[&9🌊 &bOceanWorld &9🌊&8] &r"
+  # text: "&8[&b⚓ &3Ocean World &b⚓&8] &r"
+  # text: "&8[&9≋ &bOW &9≋&8] &r"
+
+# Ocean biomes to include in world generation
+# Available biomes: warm_ocean, lukewarm_ocean, ocean, cold_ocean, frozen_ocean,
+# deep_lukewarm_ocean, deep_ocean, deep_cold_ocean, deep_frozen_ocean
+included_biomes:
+  - warm_ocean
+  - lukewarm_ocean
+  - ocean
+  - cold_ocean
+  - frozen_ocean
+  - deep_lukewarm_ocean
+  - deep_ocean
+  - deep_cold_ocean
+  - deep_frozen_ocean
+
+# Water level configuration
+water_height:
+  enabled: true
+  level: 62
+
+# World generation height limits
+world_limits:
+  # Minimum Y level for world generation (can be negative like -64)
+  min_world_y: -64
+  # Maximum Y level for world generation
+  max_world_y: 320
+
+# Seafloor height and composition
+sea_floor:
+  enabled: true
+  min_y: 30
+  max_y: 40
+
+  # Available materials: sand, gravel, dirt, clay, sandstone, stone, cobblestone
+  materials:
+    - sand
+    - gravel
+    - dirt
+    - clay
+    - sandstone
+
+
+# Enable coral reefs generation in warm ocean biomes
+coral_reefs: true
+
+# Structure generation toggles
+structures:
+  ocean_monuments: false
+  shipwrecks: false
+  nether_portals: false
+  end_portals: false
+  ruins: false
+
+# Mob spawning configuration
+allow_mobs: true
+
+# World generation settings
+world_settings:
+  # Prevent any above-water terrain generation
+  strict_ocean_only: true
+  # Generate underwater features like caves (recommended: false for pure ocean)
+  underwater_caves: false
+  # Generate underwater ravines (recommended: false for pure ocean)
+  underwater_ravines: false
+
+# Vanilla generation below seafloor
+vanilla_generation:
+  enabled: true
+  # Generate vanilla minecraft layers (stone, ores, etc.) below seafloor min_y
+  below_seafloor: true
+  # Allow vanilla cave generation below seafloor
+  caves_below_seafloor: true
+  # Allow vanilla ore generation below seafloor
+  ores_below_seafloor: true
